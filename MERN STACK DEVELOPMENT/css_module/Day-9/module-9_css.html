@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-9 | FlexBox</title>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .site-navigation {
+        background-color: #fff;
+        padding: 10px;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-link {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #5f6368;
+    }
+    
+    .sign-in-btn {
+        padding: 10px 20px;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #google-logo {
+        margin-top: 90px;
+    }
+    
+    .search-container {
+        margin-top: 35px;
+    }
+    
+    .search-input {
+        width: 550px;
+        padding: 15px;
+        border: 2px solid #dcdcdc;
+        border-radius: 200px;
+        
+    }
+
+
+    </style>
+    
+    <!-- 
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent-container {
+            border: 2px solid black;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            margin: 10px;
+            color: white;
+        }
+    -->
+</head>
+<body>
+    <h1>Day-9 | FlexBox</h1>
+
+    <header>
+        <nav class="site-navigation">
+            <div class="header-container">
+                <a href="#" class="nav-link">Gmail</a>
+                <a href="#" class="nav-link">Images</a>
+                <button class="sign-in-btn">Sign in</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="      Search Google or type a URL">
+        </div>
+    </main>
+
+    <!--
+    <div class="parent-container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    -->
+</body>
+</html> 
